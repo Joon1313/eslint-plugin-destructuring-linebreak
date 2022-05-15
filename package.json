@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-destructuring-linebreak",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "Destructuring linebreak rules for eslint",
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
+    "eslint-plugin-destructuring-linebreak": "^1.0.1",
     "requireindex": "^1.2.0"
   },
   "devDependencies": {
