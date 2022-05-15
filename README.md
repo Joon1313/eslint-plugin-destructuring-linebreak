@@ -1,36 +1,53 @@
 # eslint-plugin-newline
-
-Destructuring linebreak rules for eslint
+### eslint plugin for newline in `destructuring` or `import module` syntax
 
 ## Installation
 
 You'll first need to install [ESLint](https://eslint.org/):
 
 ```sh
+// Npm
 npm i eslint -D
+// Yarn
+yarn add eslint -D
 ```
 
 Next, install `eslint-plugin-newline`:
 
 ```sh
+// NPM
 npm i eslint-plugin-newline -D
+// YARN
+yarn add eslint-plugin-newline -D
 ```
 
 ## Demo
 ### :thumbsdown: Before use
 ```javascript
+// import modules
+import {example1, example2, example3, example4} from "example";
+import {
+  example1, example2, example3, example4
+  } from "example";
+
+// obejct destructuring
 const {a, b, c, d, e, f,} = obj;
 const {
     a, b, c, d, e, f,
 } = obj;
 
-import {example1, example2, example3, example4} from "example";
-import {
-  example1, example2, example3, example4
-  } from "example";
 ```
 ### :thumbsup:  After use
 ```javascript
+// import modules
+import {
+  example1,
+  example2,
+  example3,
+  example4,
+} from 'example';
+
+// obejct destructuring
 const {
   name,
   age,
@@ -38,12 +55,6 @@ const {
   example,
 } = obj;
 
-import {
-  example1,
-  example2,
-  example3,
-  example4,
-} from 'example';
 ```
 
 ## Usage
@@ -58,10 +69,10 @@ Then configure the rules you want to use under the `rules` section.
     ],
     
     "rules": {
-        "destructuring-linebreak/object-property": ["error",{
+        "newline/object-property": ["error",{
             "minItems": 2
         }],
-        "destructuring-linebreak/import-module": ["error",{
+        "newline/import-module": ["error",{
             "minItems": 2
         }]
     }
