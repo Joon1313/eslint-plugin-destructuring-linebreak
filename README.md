@@ -1,4 +1,4 @@
-# eslint-plugin-eslint-destructuring
+# eslint-plugin-newline
 
 Destructuring linebreak rules for eslint
 
@@ -10,10 +10,10 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint -D
 ```
 
-Next, install `eslint-plugin-destructuring-linebreak`:
+Next, install `eslint-plugin-newline`:
 
 ```sh
-npm i eslint-plugin-destructuring-linebreak -D
+npm i eslint-plugin-newline -D
 ```
 
 ## Demo
@@ -48,14 +48,15 @@ import {
 
 ## Usage
 
-Add `destructuring-linebreak` to the `plugins` section of your `.eslintrc` configuration file.
+Add `newline` to the `plugins` section of your `.eslintrc` configuration file.
 Then configure the rules you want to use under the `rules` section.
 
 ```json
 {
     "plugins": [
-        "destructuring-linebreak"
+        "newline"
     ],
+    
     "rules": {
         "destructuring-linebreak/object-property": ["error",{
             "minItems": 2
