@@ -1,29 +1,29 @@
 # eslint-plugin-eslint-destructuring
 
-test
+Destructuring linebreak rules for eslint
 
 ## Installation
 
 You'll first need to install [ESLint](https://eslint.org/):
 
 ```sh
-npm i eslint --save-dev
+npm i eslint -D
 ```
 
-Next, install `eslint-plugin-eslint-destructuring`:
+Next, install `eslint-plugin-destructuring-linebreak`:
 
 ```sh
-npm install eslint-plugin-eslint-destructuring --save-dev
+npm i eslint-plugin-destructuring-linebreak -D
 ```
 
 ## Usage
 
-Add `eslint-destructuring` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `destructuring-linebreak` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "eslint-destructuring"
+        "destructuring-linebreak"
     ]
 }
 ```

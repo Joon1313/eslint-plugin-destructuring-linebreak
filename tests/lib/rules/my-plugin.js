@@ -8,7 +8,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-const rule = require("../../../lib/rules/my-plugin"),
+const rule = require("../../../lib/rules/import-module"),
   RuleTester = require("eslint").RuleTester;
 
 
@@ -22,21 +22,21 @@ const ruleTester = new RuleTester({
     sourceType:'module'
   },
 });
-ruleTester.run("my-plugin", rule, {
+ruleTester.run("import-module", rule, {
   valid: [
-    {code:"const {hi,hello} = obj;"}
+    {code:"import {hi,hello} from 'vue';"}
   ],
 
   invalid: [
-    {
-      code: "const {hi,hello} = obj;",
-      output: "const {hi,\nhello} = obj;",
-      errors: [{ message: "propertiesOnNewline", type: "ObjectPattern" }],
-    },
-    {
-      code: "const {a,b,c} = obj;",
-      output: "const {a,\nb,\nc} = obj;",
-      errors: [{ message: "propertiesOnNewline", type: "ObjectPattern" }],
-    },
+    // {
+    //   code: "const {hi,hello} = obj;",
+    //   output: "const {hi,\nhello} = obj;",
+    //   errors: [{ message: "propertiesOnNewline", type: "ObjectPattern" }],
+    // },
+    // {
+    //   code: "const {a,b,c} = obj;",
+    //   output: "const {a,\nb,\nc} = obj;",
+    //   errors: [{ message: "propertiesOnNewline", type: "ObjectPattern" }],
+    // },
   ],
 });

@@ -1,7 +1,12 @@
 {
   "name": "eslint-plugin-destructuring-linebreak",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Destructuring linebreak rules for eslint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Joon1313/eslint-plugin-destructuring-linebreak"
+  },
+  "homepage": "https://github.com/Joon1313/eslint-plugin-destructuring-linebreak",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -9,8 +14,18 @@
     "eslint-destructuring",
     "eslint-destructuring-linebreak",
     "eslint-plugin-destructuring-linebreak",
+    "destructuring",
+    "destructuring-line",
+    "destructuring-newline",
+    "destructuring-linebreak",
+    "destructuring-rule",
+    "destructuring-multiline",
+    "import-destructuring-rule",
+    "import-newline",
+    "import-rule",
+    "import-multiline"
   ],
-  "author": "joon",
+  "author": "joon1313",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
