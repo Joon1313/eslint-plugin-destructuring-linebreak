@@ -1,0 +1,35 @@
+{
+  "name": "eslint-plugin-destructuring-linebreak",
+  "version": "0.0.6",
+  "description": "Destructuring linebreak rules for eslint",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "eslint-destructuring",
+    "eslint-destructuring-linebreak",
+    "eslint-plugin-destructuring-linebreak",
+  ],
+  "author": "joon",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "requireindex": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-plugin-eslint-plugin": "^4.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^9.1.3"
+  },
+  "engines": {
+    "node": "12.x || 14.x || >= 16"
+  },
+  "peerDependencies": {
+    "eslint": ">=6"
+  },
+  "license": "MIT"
+}
