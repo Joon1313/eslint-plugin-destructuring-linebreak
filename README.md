@@ -1,5 +1,5 @@
 # eslint-plugin-newline
-### eslint plugin for newline in `destructuring` or `import module` syntax
+eslint plugin for newline in `destructuring` or `import module` syntax
 
 ## Installation
 
