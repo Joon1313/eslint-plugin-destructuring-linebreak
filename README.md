@@ -1,4 +1,4 @@
-# eslint-plugin-eslint-destructuring-torder
+# eslint-plugin-eslint-destructuring
 
 test
 
@@ -10,20 +10,20 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-eslint-destructuring-torder`:
+Next, install `eslint-plugin-eslint-destructuring`:
 
 ```sh
-npm install eslint-plugin-eslint-destructuring-torder --save-dev
+npm install eslint-plugin-eslint-destructuring --save-dev
 ```
 
 ## Usage
 
-Add `eslint-destructuring-torder` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `eslint-destructuring` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "eslint-destructuring-torder"
+        "eslint-destructuring"
     ]
 }
 ```
@@ -34,7 +34,9 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "eslint-destructuring-torder/rule-name": 2
+        "destructuring-linebreak/object-property": ["error",{
+            minItems:2 // default 2
+        }]
     }
 }
 ```
