@@ -39,19 +39,19 @@
    invalid: [
      {
        code: "import {hi,hello} from 'module'",
-       output: "import {\nhi,\nhello,\n} from 'module'",
+       output: "import {\n  hi,\n  hello,\n} from 'module'",
        options:[{minItems: 2}],
        errors: [{ messageId:'import-module'}],
      },
      {
        code: "import {hi,hello,world} from 'module'",
-       output: "import {\nhi,\nhello,\nworld,\n} from 'module'",
+       output: "import {\n  hi,\n  hello,\n  world,\n} from 'module'",
        options:[{minItems: 3}],
        errors: [{ messageId:'import-module'}],
      },
      {
        code: "import {hi,hello,world,joon} from 'module'",
-       output: "import {\nhi,\nhello,\nworld,\njoon,\n} from 'module'",
+       output: "import {\n  hi,\n  hello,\n  world,\n  joon,\n} from 'module'",
        options:[{minItems: 4}],
        errors: [{ messageId:'import-module'}],
      },

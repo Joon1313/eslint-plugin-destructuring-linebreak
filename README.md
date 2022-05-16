@@ -70,10 +70,12 @@ Then configure the rules you want to use under the `rules` section.
     
     "rules": {
         "newline/object-property": ["error",{
-            "minItems": 2
+            "minItems": 2,
+            "tab": 2,
         }],
         "newline/import-module": ["error",{
-            "minItems": 2
+            "minItems": 2,
+            "tab": 2,
         }]
     }
 }
@@ -81,6 +83,6 @@ Then configure the rules you want to use under the `rules` section.
 
 ## Options
 The rule accepts an option object with the following properties:
-* `minItems` [number] (minimum: 2) - Specifies the minimum number of attributes required for line breaks.
-
+* `minItems` [number] (minimum: 2)(default: 2) - Specifies the minimum number of attributes required for line breaks.
+* `tab` [number] (minimum: 1)(default: 2) - Specifies the number of spaces in front of the property after newline.
 

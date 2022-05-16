@@ -35,19 +35,19 @@ ruleTester.run("object-property", rule, {
   invalid: [
     {
       code: "const {hi,hello} = obj;",
-      output: "const {\nhi,\nhello,\n} = obj;",
+      output: "const {\n  hi,\n  hello,\n} = obj;",
       options:[{minItems: 2}],
       errors: [{ messageId:'object-property'}],
     },
     {
       code: "const {hi,hello,world} = obj;",
-      output: "const {\nhi,\nhello,\nworld,\n} = obj;",
+      output: "const {\n  hi,\n  hello,\n  world,\n} = obj;",
       options:[{minItems: 3}],
       errors: [{ messageId:'object-property'}],
     },
     {
       code: "const {hi,hello,world,joon} = obj;",
-      output: "const {\nhi,\nhello,\nworld,\njoon,\n} = obj;",
+      output: "const {\n  hi,\n  hello,\n  world,\n  joon,\n} = obj;",
       options:[{minItems: 4}],
       errors: [{ messageId:'object-property'}],
     },
