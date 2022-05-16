@@ -25,6 +25,10 @@
  ruleTester.run("import-module", rule, {
    valid:[
      {
+     code:"import {hi} from 'module'",
+     options:[2],
+     },
+     {
      code:"import {hi ,\nhello,\n} from 'module'",
      options:[2],
      },

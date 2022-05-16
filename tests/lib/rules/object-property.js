@@ -25,13 +25,13 @@ const ruleTester = new RuleTester({
 ruleTester.run("object-property", rule, {
   valid:[
     {
+    code:"const {hi} = obj;",
+    options:[2],
+    },
+    {
     code:"const {hi ,\nhello\n} = obj;",
     options:[2],
     },
-    // {
-    // code:"const {hi,\nhello,\nworld} = obj;",
-    // options:[3],
-    // },
 ],
   invalid: [
     {
