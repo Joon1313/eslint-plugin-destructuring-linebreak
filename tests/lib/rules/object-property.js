@@ -26,7 +26,6 @@ ruleTester.run("object-property", rule, {
   valid:[
     {
     code:"const {hi} = obj;",
-    options:[2],
     },
     {
     code:"const {hi ,\nhello\n} = obj;",
