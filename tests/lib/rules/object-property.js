@@ -25,35 +25,32 @@ const ruleTester = new RuleTester({
 ruleTester.run("object-property", rule, {
   valid:[
     {
-    code:"const {hi,\nhello} = obj;",
+    code:"const {hi ,\nhello\n} = obj;",
     options:[2],
     },
-    {
-    code:"const {hi,\nhello,\nworld} = obj;",
-    options:[3],
-    },
+    // {
+    // code:"const {hi,\nhello,\nworld} = obj;",
+    // options:[3],
+    // },
 ],
   invalid: [
     {
       code: "const {hi,hello} = obj;",
-      output: "const {hi,\nhello} = obj;",
+      output: "const {\nhi,\nhello,\n} = obj;",
       options:[{minItems: 2}],
       errors: [{ messageId:'object-property'}],
     },
     {
       code: "const {hi,hello,world} = obj;",
-      output: "const {hi,\nhello,\nworld} = obj;",
+      output: "const {\nhi,\nhello,\nworld,\n} = obj;",
       options:[{minItems: 3}],
-      errors: [
-        { messageId:'object-property'},
-        { messageId:'object-property'},
-      ],
+      errors: [{ messageId:'object-property'}],
     },
-    // {
-    //   code: "const {hi,hello,world,toto} = obj;",
-    //   output: "const {hi,\nhello,\nworld,\ntoto} = obj;",
-    //   options:[{minItems: 4}],
-    //   errors: [{ message: "A line break is required when there are more than 4 properties", type: "ObjectPattern" }],
-    // },
+    {
+      code: "const {hi,hello,world,joon} = obj;",
+      output: "const {\nhi,\nhello,\nworld,\njoon,\n} = obj;",
+      options:[{minItems: 4}],
+      errors: [{ messageId:'object-property'}],
+    },
   ],
 });

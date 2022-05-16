@@ -81,6 +81,6 @@ Then configure the rules you want to use under the `rules` section.
 
 ## Options
 The rule accepts an option object with the following properties:
-* `minItems` [number] (default:2) - SSpecifies the minimum number of attributes required for line breaks.
+* `minItems` [number] (minimum: 2) - Specifies the minimum number of attributes required for line breaks.
 
 
