@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-newline",
-  "version": "1.4.1",
-  "description": "eslint plugin for newline in destructuring or import module rule",
+  "version": "1.4.2",
+  "description": "ESLint plugin to enforce newlines in ES6 object destructuring or import",
   "repository": {
     "type": "git",
     "url": "https://github.com/Joon1313/eslint-plugin-newline"

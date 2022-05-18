@@ -1,5 +1,5 @@
 # eslint-plugin-newline
-eslint plugin for newline in `destructuring` or `import module` rule
+ESLint plugin to enforce newlines in ES6 object `destructuring` or `import`
 
 ## Installation
 
