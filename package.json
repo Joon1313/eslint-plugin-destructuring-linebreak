@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-newline",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Destructuring linebreak rules for eslint",
   "repository": {
     "type": "git",
@@ -11,6 +11,8 @@
     "eslint",
     "eslintplugin",
     "eslint-plugin",
+    "newline",
+    "linebreak",
     "destructuring",
     "import"
   ],
