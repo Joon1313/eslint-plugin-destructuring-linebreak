@@ -2,6 +2,7 @@
 
 module.exports = {
   root: true,
+  "parser": "babel-parser",
   extends: [
     "eslint:recommended",
     "plugin:eslint-plugin/recommended",
