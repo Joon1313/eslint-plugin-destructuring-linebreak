@@ -55,6 +55,12 @@
        options:[{minItems: 4}],
        errors: [{ messageId:'import-module'}],
      },
+     {
+      code: "import axios, {hi,hello} from 'module'",
+      output: "import axios,\n{\n  hi,\n  hello,\n} from 'module'",
+      options:[{minItems: 2}],
+      errors: [{ messageId:'import-module'}],
+    },
    ],
  });
  
